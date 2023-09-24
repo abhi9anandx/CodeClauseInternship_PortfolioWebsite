@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#body-header {
+    background-image: url("image/macbook-g1cf5f2f68_1280.jpg");
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+
+.horizontal-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.horizontal-list a {
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 21px;
+    color: black;
+    font-family: 'Nova Oval', cursive;
+}
+
+.horizontal-list li a:hover {
+    color: gray;
+    border-bottom: 1px solid grey;
+}
+
+.name-social {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.name h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+.social ul li a img {
+    height: 1.5rem;
+    margin-left: 15px;
+}
+
+.social ul {
+    display: flex;
+    margin-top: 20px;
+}
+
+.social ul li a img:hover {
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px rgba(69, 69, 69, 0.649);
+}
+
+#my-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -20vh;
+}
+
+#my-image img {
+    border-radius: 50%;
+    height: 225px;
+    box-shadow: 0px 0px 7px 5px rgba(134, 134, 134, 0.649);
+    border: 1px solid white;
+}
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#about p {
+    font-size: 23px;
+    padding: 25px 100px 0px 100px;
+    text-align: justify;
+    font-family: 'Bacasime Antique', serif;
+}
+
+.what-i-do span {
+    font-family: 'Inconsolata', monospace;
+}
+
+#skill {
+    background-color: rgba(228, 228, 228, 0.691);
+    padding-bottom: 30px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(86, 86, 255);
+    margin-top: 35px;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.section-heading img {
+    height: 2.5rem;
+    margin-right: 15px;
+}
+
+.skills-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0% 5% 0% 5%;
+    padding-top: 20px;
+}
+
+.skill-progress {
+    height: 1.8rem;
+    width: 9rem;
+    background-color: rgba(218, 218, 218, 0.734);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-radius: .8rem;
+    box-shadow: 5px 5px 5px 1px rgb(190, 190, 190);
+    border: 1px solid white;
+}
+
+.skill-percent {
+    border-radius: .8rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(68, 152, 255, 0.864);
+}
+
+.timeline {
+    position: relative;
+    margin: 0% 12.5%5% 12.5%;
+}
+
+.timeline-box {
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-divider {
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #637aff;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-traveller img {
+    height: 25px;
+    margin-left: -12px;
+}
+
+.timeline-traveller {
+    position: sticky;
+    top: 25%;
+    transform: rotate(180deg);
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    right: -2%;
+    border-radius: 50%;
+    width: .5rem;
+    height: .5rem;
+    background-color: #637aff;
+}
+
+.timeline-box:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: -2%;
+    border-radius: 50%;
+    width: .5rem;
+    height: .5rem;
+    background-color: #637aff;
+}
+
+#education {
+    background-color: #ececec;
+}
+
+#portfolio-container {
+    width: 100%;
+    min-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.portfolio-image-container {
+    width: 25%;
+    height: auto;
+    min-width: 150px;
+    margin: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+.portfolio-image-container:hover {
+    box-shadow: 0px 0px 12px 0px #6db5fd;
+}
+
+.portfolio-image-container:hover .middle {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.portfolio-image-container .middle {
+    background-color: rgba(53, 53, 53, 0.315);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.portfolio-image-container .middle .portfolio-text {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.write-edu {
+    text-align: center;
+}
+
+.col-bl {
+    color: black;
+    font-weight: 700;
+}
+
+.col-wt {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#contact {
+    background-image: linear-gradient(to top right, #2857a4, #403066);
+    color: white;
+    width: 100%;
+}
+
+#contact {
+    background-image: linear-gradient(to top right, #2857a4, #403066);
+    color: white;
+    font-size: 1rem;
+}
+
+.contact-container {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-container .contact-form-container textarea.input-field {
+    height: 4rem;
+    resize: none;
+}
+
+.contact-container .contact-form-container .input-field {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border: none;
+    height: 2.5rem;
+    font-size: 1em;
+    color: white;
+    border-bottom: 3px solid white;
+    background-color: #0000;
+}
+
+.contact-container .contact-form-container textarea.input-field {
+    height: 4rem;
+    resize: none;
+}
+
+.contact-container .contact-form-container .input-field:focus {
+    outline: none;
+    border-bottom: 3px solid #bebebe;
+}
+
+.contact-container .contact-form-container .input-field::placeholder {
+    color: #bebebe;
+}
+
+.contact-container .contact-form-container #submit {
+    display: block;
+    margin: 0 auto;
+    font-size: 0.75em;
+    padding: 0.5rem 1rem;
+}
+
+.contact-container .address-container h2,
+.contact-container .address-container div {
+    margin: 0.8rem 0;
+}
+
+.contact-container .contact-form-container #submit:hover {
+    color: #1262b3;
+}
+
+.contact-container .address-container div,
+.contact-container .address-container p {
+    margin: 10px;
+    font-size: 23px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap !important;
+}
+.add-name{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.add-name i{
+    margin-right: 20px;
+}
+@media screen and (max-width: 680px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .address-container {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timeline-divider {
+        left: 5%;
+    }
+
+    .timeline-box {
+        left: 12% !important;
+        width: 80%;
+    }
+
+    .timeline-box::after {
+        left: -1% !important;
+    }
+
+    .horizontal-list {
+        flex-wrap: wrap;
+    }
+
+    #about p {
+        padding: 40px 40px 40px 40px;
+    }
+
+    #my-image {
+        margin-top: -14vh;
+    }
+
+    #portfolio-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* Percentage */
+.percent100 {
+    width: 100%;
+    background-color: rgb(186, 116, 255);
+}
+
+.percent90 {
+    width: 90%;
+}
+
+.percent80 {
+    width: 80%;
+    background-color: rgb(255, 239, 94);
+}
+
+.percent70 {
+    width: 70%;
+    background-color: rgb(248, 121, 121);
+}
+
+.percent95 {
+    width: 60%;
+    background-color: #ffaa00;
+}
+
+.percent50 {
+    width: 50%;
+    background-color: #87ff58;
+}
